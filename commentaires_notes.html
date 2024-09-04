@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+    Ajouter un effet de lumière blanche sur une image avec CSS
+    Pour ajouter un effet de lumière blanche sur une image, utilisez la propriété `filter` avec la fonction `brightness`.
+    
+    Syntaxe :
+    selector {
+        filter: brightness(150%);
+    }
+
+    - `selector` : L'élément HTML auquel appliquer l'effet (par exemple, `img`, `.my-div`, etc.).
+    - `brightness(150%)` : Augmente la luminosité de l'image de 50%. Ajustez le pourcentage selon l'effet désiré.
+    
+    Exemple d'application :
+
+    Appliquer un effet de lumière blanche à une image :
+    img {
+        filter: brightness(150%);
+    }
+
+    Appliquer un effet de lumière blanche sur un `div` avec une image de fond :
+    .my-div {
+        background-image: url("background.jpg");
+        filter: brightness(120%);
+    }
+
+    Exemple avec `hover` (survol de la souris) :
+    img {
+        filter: brightness(100%); /* Luminosité normale */
+        transition: filter 0.3s ease-in-out;
+    }
+
+    img:hover {
+        filter: brightness(150%); /* Augmente la luminosité sur le survol */
+    }
+
+    Remarque :
+    La propriété `filter` est supportée par la plupart des navigateurs modernes. Vérifiez la compatibilité pour les navigateurs plus anciens.
+
+    -----------------------------------
+
+    Contrôle de l'arrière-plan avec CSS
+    Pour ajouter une image en arrière-plan, utilisez la propriété `background-image`.
+
+    Image en arrière-plan sur tout le corps de la page :
+    body {
+        background-image: url("background.jpg");
+    }
+
+    Image en arrière-plan sur un `div` spécifique :
+    .my-div {
+        background-image: url("background.jpg");
+    }
+
+    Contrôle de la répétition de l'image :
+    background-repeat: no-repeat; /* Pas de répétition */
+    background-repeat: repeat-x;  /* Répétition horizontale */
+    background-repeat: repeat-y;  /* Répétition verticale */
+
+    Redimensionnement de l'image d'arrière-plan :
+    background-size: cover;  /* L'image couvre tout l'élément */
+    background-size: contain; /* L'image est contenue dans l'élément */
+
+    Positionnement de l'image d'arrière-plan :
+    background-position: center; /* Centre l'image */
+    background-position: top right; /* En haut à droite */
+
+    Fixation ou défilement de l'image d'arrière-plan :
+    background-attachment: fixed;  /* L'image est fixe */
+    background-attachment: scroll; /* L'image défile avec la page */
+
+    Exemple complet :
+    body {
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    =================================================================================================================================
+
+    Liste sans puces
+    Pour retirer les puces d'une liste `ul`, utilisez la propriété `list-style` :
+    ul {
+        list-style: none;
+    }
+
+    ===================================================================================================================================
+
+    Utilisation des icônes FontAwesome
+    Pour utiliser des icônes depuis FontAwesome, intégrez le CDN suivant dans votre fichier HTML :
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">7
+
+
+
+
+
+
+
+=================================================================================================================================
+
+******************************* explication ****************************************
+
+Explication :
+
+    Commentaires : Les sections sont bien séparées par des commentaires pour faciliter la lecture et la compréhension.
+    Propriétés CSS : Les exemples de CSS sont clairement définis avec des explications.
+    FontAwesome : Ajout d'instructions pour inclure les icônes FontAwesome via un CDN.
+
+Vous pouvez maintenant copier ce code révisé et l'utiliser dans votre projet. Cela devrait rendre votre code plus lisible et mieux structuré.
+
+
+==============horiznta ============
+      margin: 0;
+        }
+
+        .top-half, .bottom-half {
+            width: 100%;
+            height: 50vh; /* 50% de la hauteur de la vue pour chaque section */
+        }
+
+ ============ vertcal  ===========
+       margin: 0;
+        }
+
+        .top-half, .bottom-half {
+            width: 50vh;
+            height: 100%; /* 50% de la hauteur de la vue pour chaque section */
+        }
+
+
+    justify-content: space-between; /* Espacement égal entre tous les éléments */
+    display : flex; 
+    list_style: none; retire les poins de sur l'element li
+
+
+         *********
+sur le link-   ******
+
+nav li a{
+    text-align: cenetr;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+
+}
+
+
+
+    -->
+
+</body>
+</html>
